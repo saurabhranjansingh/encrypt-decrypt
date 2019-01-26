@@ -14,8 +14,8 @@ namespace EncryptDecrypt
         {
             //You can change the content of SecretKey & InitializationVector.
             //But don't change their length.
-            string SecretKey = "zdf3kdf820nvk94dJsd7nsl29kslqTx8"; //Length must be 32
-            string InitializationVector = "h82hmD9tmwNn2Xh4";      //Length must be 16
+            string SecretKey = "zdf3kdf820nvk94dJsd7nsl29kslqTx8"; //Length must be 32 (256 bit)
+            string InitializationVector = "h82hmD9tmwNn2Xh4";      //Length must be 16 (128 bit)
 
             KeyBytes = Encoding.ASCII.GetBytes(SecretKey);
             IVBytes = Encoding.ASCII.GetBytes(InitializationVector);
